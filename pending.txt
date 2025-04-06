@@ -1,0 +1,10 @@
+prot lb ac
+merge genotype
+merge idc
+merge info
+################
+create report
+merge advanced, prelim, etc
+################
+filter for advanced, etc, before running each module
+################
