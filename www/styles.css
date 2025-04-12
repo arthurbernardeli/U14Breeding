@@ -1,0 +1,81 @@
+/* ✅ Default background: Background photo for the entire app */
+body {
+    background: url('background_photo.jpg') no-repeat center top fixed;
+    background-size: contain;
+    background-color: white;
+    max-width: 100%;
+    overflow-x: auto; /* ✅ Prevents horizontal scrolling */
+    overflow-y: auto; /* ✅ Prevents horizontal scrolling */
+    transition: background 0.5s ease-in-out; /* ✅ Smooth transition effect */
+}
+
+/* ✅ Gray box for results table */
+#results-box {
+    background: rgba(211, 211, 211, 0.95); /* ✅ Light gray box with slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* ✅ Subtle shadow */
+    max-width: 1200px; /* ✅ Prevents excessive stretching */
+    text-align: center;
+}
+
+/* ✅ Gray box for instructions */
+#instructions-box {
+    background: rgba(211, 211, 211, 0.95); /* ✅ Light gray box with slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* ✅ Subtle shadow */
+    max-width: 1200px; /* ✅ Prevents excessive stretching */
+    text-align: justify;
+}
+
+
+/* ✅ Title styling */
+.app-title {
+    color: white;
+    font-weight: bold;
+    font-size: 20px; /* ✅ Adjusts size */
+    text-align: center;
+    line-height: 1.2; /* ✅ Controls spacing between rows */
+    margin-bottom: 15px; /* ✅ Adds spacing below */
+}
+
+
+/* ✅ Default tab background (inactive tabs) */
+.nav-tabs > li > a {
+    background-color: #d3d3d3 !important; /* ✅ Light grey */
+    color: black !important; /* ✅ Ensures text remains visible */
+    border-radius: 5px 5px 0 0; /* ✅ Rounds top edges */
+    padding: 10px 15px;
+}
+
+/* ✅ Active tab background */
+.nav-tabs > li.active > a {
+    background-color: #b0b0b0 !important; /* ✅ Slightly darker grey */
+    color: black !important;
+    border-radius: 5px 5px 0 0;
+}
+
+/* ✅ Hover effect (when hovering over tabs) */
+.nav-tabs > li > a:hover {
+    background-color: #c0c0c0 !important; /* ✅ Medium grey on hover */
+}
+
+/* ✅ Remove any accidental horizontal lines */
+hr {
+    display: none;
+}
+
+tags$style(HTML("
+  hr {
+    display: none; /* Hides horizontal rule */
+  }
+  .container {
+    border: none !important;
+    padding: 0 !important;
+  }
+"))
